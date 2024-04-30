@@ -10,6 +10,7 @@ Preprocessing
 Vectorization
 -> Both TFIDF and count vectorizer are used on transcripts and user input
 -> various distance measuring metrics like cosine similarity, KL divergence, Manhattan Distance, Jaccard Similarity, Hellinger Distance are calculated between  User input vector and tf-idf vector and generated recommendations as list of Talk titles and urls.
+-> Recommendations function works as if the user input is a speaker name, it gives talk titles and respective urls given by speaker, if it's a gibberish word it gives 3 random recommendations, if it's a word or a topic it calculates similarity and generates similar talk recommendations.
 -> chose cosine similarity as the similarity metric for further models.
 
 Topic Modeling
